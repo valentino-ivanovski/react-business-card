@@ -9,7 +9,9 @@ function test() {
 const App = () => {
   return (
     <div onLoad={test()} className="App">
-      <Businesscard />
+      <div className='animated-bg'>
+        <Businesscard />
+      </div>
     </div>
   );
 };

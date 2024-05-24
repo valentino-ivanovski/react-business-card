@@ -3,81 +3,88 @@
   opacity: 0%;
   flex-direction: column;
   align-items: center;
-  background-color: #FFFDEA;
-  border: 1px solid #ccc;
+  background-color: #99999960;
+  border: 1px solid #e3e3e367;
   border-radius: 7px;
   padding: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-family: Arial, sans-serif;
-  height: 490px;
+  height: 500px;
   width: 240px;
-  transition: all 0.4s ease-in-out;
-  animation: fadeIn 2s ease-in-out forwards;
+  transition: all 0.5s ease-in-out;
+  animation: fadeIn 1s ease-in-out forwards;
   animation-delay: 0.5s;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .card-item:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.093);
   scale: 1.03;
   cursor: pointer;
+  box-shadow: 0 0 12px #84414178,
+    0 0 14px #84414178,
+    0 0 16px #84414178,
+    0 0 18px #84414178,
+    0 0 110px #84414178,
+    0 0 112px #84414178;
+
+  background-color: #ee8ba778;
+
+  #content img {
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.365);
+    scale: 1.05;
+    transform: translateY(-6px)
+  }
+
+  .contact p:hover {
+    color: white;
+  }
+
+  #content img:hover {
+    scale: 1.01;
+  }
+
+
+.cs:hover{
+  color: white;
 }
 
-.skills span {
-  display: inline-block;
-  background: #ee5050;
-  color: white;
-  border-radius: 25px;
-  padding: 5px 10px;
-  margin: 5px;
-  font-size: 0.9em;
+  .name {
+    scale: 1.07;
+    text-shadow: 0 7px 8px rgba(0, 0, 0, 0.300);
+    transform: translateY(-4px);
+  }
+
+  .skills span {
+    scale: 1.05;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 7px rgba(56, 56, 56, 0.135);
+    background-color: #b68b8b6e;
+  }
+
+  .skills span:hover {
+    background-color: #edcaca5f;
+  }
+
+  .cs {
+    color: rgba(255, 255, 255, 0.667);
+  }
+
 }
 
 .card-item p a {
-  color: #414141;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  color: #d9d9d9;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-item p a:hover {
-  color: #000;
+  color: #ffffff;
   text-decoration: bold;
 }
 
 .card-item.expanded {
-  height: 600px;
-  opacity: 100%;
+  height: 560px;
   border-radius: 12px;
-
-}
-
-.button-container button {
-  background-color: transparent;
-  border: 2px solid #ee5050;
-  color: #ee5050;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  border-radius: 50px;
-}
-
-.button-container button:hover {
-  background-color: #ee5050;
-  color: white;
 }
 
 #content {
@@ -87,41 +94,84 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  perspective: 1000px;
 }
 
 #content img {
   width: 235px;
-  height: 225px;
+  height: 235px;
+  opacity: 0.9;
+  margin-top: 3px;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
 
-#content p {
-  font-size: 14px;
-  margin: 5px 0;
-  color: #999;
+.skills span {
+  display: inline-block;
+  background: #ffffff3a;
+  color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 0.9em;
+  transition: all 0.5s ease-in-out;
 }
 
-.card-item h1 {
-  margin-bottom: 8px;
+.button-container button {
+  background-color: #d1d1d1;
+  border: 0px solid #d9d9d9;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 50px;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.button-container button:hover {
+  background-color: #b7b7b7;
+  scale: 1.05;
+}
+
+.name {
   font-size: 24px;
-  color: black;
+  opacity: 0.7;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
-.card-item h3 {
-  font-size: 16px;
-  color: #777;
-}
-
-.card-item p {
+.contact {
   font-size: 14px;
-  color: #999;
+  color: #d9d9d9;
 }
+
+.contact p {
+  margin: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cs {
+  font-size: 14px;
+  color: #d9d9d9;
+  margin-bottom: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
 
 .welcome-text {
   font-size: 54px;
   color: white;
-  animation: fadeOut 3s linear forwards;
+  animation: fadeOut 4s linear forwards;
+}
+
+.welcome-text:hover{
+  cursor: default;
 }
 
 @keyframes fadeOut {
@@ -131,5 +181,15 @@
 
   to {
     opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

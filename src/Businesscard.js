@@ -8,12 +8,12 @@ import "./Businesscard.css";
 
 const Businesscard = () => {
     const [isExpanded, setIsExpanded] = useState(false);
-    const [showWelcome, setShowWelcome] = useState(true);
+    const [showWelcome, setShowWelcome] = useState(() => true); //it wouldnt work without the function when i would start the app
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowWelcome(false);
-        }, 3000);
+        }, 4000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -26,7 +26,7 @@ const Businesscard = () => {
     };
 
     if (showWelcome) {
-        return <h1 className="welcome-text">Welcome!</h1>;
+        return <h1 className="welcome-text">I hope you like it!</h1>;
     }
 
     return (
@@ -37,11 +37,11 @@ const Businesscard = () => {
                     onClick={handleClick}
                 >
                     <div id="content">
-                        <div className="profile">
-                            <img src="pfp.jpg" alt="profile-pic" />
-                            <h1>Valentino Ivanovski</h1>
-                            <p>Computer Science Student</p>
-                        </div>
+                        <img src="pfp.jpg" alt="profile-pic" />
+                        <h1 className="name">Valentino Ivanovski</h1>
+                        <p className="cs">
+                            <em>Computer Science Student</em>
+                        </p>
                         <div className="skills">
                             <span>React</span>
                             <span>Java</span>
@@ -53,21 +53,25 @@ const Businesscard = () => {
                         <div className="contact">
                             <p>Phone: (+386) 69 646 407</p>
                             <p>
-                                GitHub:{" "}
                                 <a
-                                    href="https://www.github.com/valentino-ivanovski"
+                                    href="mailto:valentino.ivanovski@icloud.com"
                                     onClick={stopExpand}
                                 >
-                                    valentino-ivanovski
+                                    valentino.ivanovski@icloud.com
                                 </a>
                             </p>
                             <p>From: Koper, Slovenia</p>
                         </div>
                         {isExpanded && (
                             <div className="button-container">
-                                <button>Button 1</button>
-                                <button>Button 2</button>
-                                <button>Button 3</button>
+                                <a
+                                    href="https://github.com/valentino-ivanovski"
+                                    onClick={stopExpand}
+                                >
+                                    <button>
+                                        <b>GitHub</b>
+                                    </button>
+                                </a>
                             </div>
                         )}
                     </div>

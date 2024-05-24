@@ -2,7 +2,7 @@
 
 This project is a simple React application that displays a business card styled box in the center of the screen. 
 
-## [Youtube Link](https://youtu.be/zLLWjxKN0DA)
+### [Youtube Link](https://youtu.be/zLLWjxKN0DA)
 
 ## How I built it:
 

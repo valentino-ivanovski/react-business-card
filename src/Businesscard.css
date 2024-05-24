@@ -3,7 +3,7 @@
   opacity: 0%;
   flex-direction: column;
   align-items: center;
-  background: white;
+  background-color: #FFFDEA;
   border: 1px solid #ccc;
   border-radius: 7px;
   padding: 20px;
@@ -62,8 +62,8 @@
 
 .button-container button {
   background-color: transparent;
-  border: 2px solid #8773d8;
-  color: #8773d8;
+  border: 2px solid #ee5050;
+  color: #ee5050;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -76,7 +76,7 @@
 }
 
 .button-container button:hover {
-  background-color: #8773d8;
+  background-color: #ee5050;
   color: white;
 }
 

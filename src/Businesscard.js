@@ -61,7 +61,7 @@ const Businesscard = () => {
                                     valentino-ivanovski
                                 </a>
                             </p>
-                            <p>Address: Goriška Ulica 15, Koper, Slovenia</p>
+                            <p>From: Koper, Slovenia</p>
                         </div>
                         {isExpanded && (
                             <div className="button-container">

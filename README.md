@@ -3,46 +3,14 @@
 This project is a simple React application that displays a business card styled box in the center of the screen. The text inside the box reads "Your business card".
 Please check the dedicated Notion page for further instructions on this project.
 
-## Prerequisites
+## How I built it:
 
-Before you begin, ensure you have met the following requirements:
-- You have installed Node.js and npm. You can download them from [nodejs.org](https://nodejs.org/).
+1. Imported a component from a UI library called Aceternity UI to make the card have a 3D depth effect when hovered over it. (I hope UI libraries are allowed)
+2. Filled in the card with basic information and added a picture. After that I tried chosing a good looking size and layout for the content inside of the card.
+3. After I was happy with the arrangement, I went searching for a good background animation. I wanted to use Tailwind CSS for this, but I kept having errors with my 3D card effect, so I abandoned it and went with normal CSS.
+4. I initially set a gradient as a background, similar to my Soundshift project, and thought adding an intro text fade animation would be cool. I made this possible with a timer that changes a variable after the 4 seconds fade out animation. This variable is responsible for displaying the intro text.
+5. Once the background was chosen, I went ahead and styled the card. I looked for inspiration on leapwize.de, and I really liked the "Work with us" button style, so I based my entire card off it. I just added more depth to the card by scaling each component.
+6. Once the design was done, I was just looking for smaller details like the hover animations and such. The goal was to make the card simple but fun looking.
 
-## Installation
-
-Follow these steps to set up and run the project:
-
-1. **Clone the repository** (if you haven't already):
- ```bash
- git clone <repository-url>
- cd intern-react-challenge
- ```
-2. **Install dependencies:** 
- ```bash
- npm install
-```
-
-3. **Run the development server:** 
-```bash
- npm start
-```
-
-4. **Open the app:** 
-Open your browser and navigate to http://localhost:3000 to see the business card styled box in the center of the screen.
-
-
-## Project Structure
-
-- `public/index.html`: The main HTML file that includes the Montserrat font link.
-- `src/App.js`: The main React component that renders the `BusinessCard` component.
-- `src/BusinessCard.js`: The React component for the business card styled box.
-- `src/BusinessCard.css`: The CSS file for styling the business card component.
-- `src/App.css`: The CSS file for global styles.
-
-## Adding More Features
-
-Feel free to extend the functionality and styling of this app. You can add more components, styles, and features as needed.
-
-## Contact
-
-If you have any questions or need further assistance, please contact us.
+## How it looks
+[![Business Card Video](https://img.youtube.com/vi/zLLWjxKN0DA/0.jpg)](https://www.youtube.com/watch?v=zLLWjxKN0DA)

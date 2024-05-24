@@ -14,5 +14,5 @@ This project is a simple React application that displays a business card styled 
 6. Once the design was done, I was just looking for smaller details like the hover animations and such. The goal was to make the card simple but fun looking.
 
 ## How it looks
-![Screenshot](https://imgur.com/b396a87e-5cc6-4117-a887-2d19997f7384)
+![Screenshot](https://i.imgur.com/i7panBr.jpg)
 

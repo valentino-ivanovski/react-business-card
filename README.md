@@ -1,7 +1,8 @@
 # Business Card React App
 
-This project is a simple React application that displays a business card styled box in the center of the screen. The text inside the box reads "Your business card".
-Please check the dedicated Notion page for further instructions on this project.
+This project is a simple React application that displays a business card styled box in the center of the screen. 
+
+## ![Youtube Link](https://youtu.be/zLLWjxKN0DA)
 
 ## How I built it:
 

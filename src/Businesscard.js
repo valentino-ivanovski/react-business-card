@@ -68,6 +68,7 @@ const Businesscard = () => {
                                     href="https://github.com/valentino-ivanovski"
                                     onClick={stopExpand}
                                     target="_blank"
+                                    rel="noreferrer noopener"
                                 >
                                     <button>
                                         <b>GitHub</b>

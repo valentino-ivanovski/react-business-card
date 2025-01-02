@@ -26,7 +26,7 @@ const Businesscard = () => {
     };
 
     if (showWelcome) {
-        return <h1 className="welcome-text">I hope you like it!</h1>;
+        return <h1 className="welcome-text">Welcome!</h1>;
     }
 
     return (

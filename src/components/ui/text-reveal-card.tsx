@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState, memo } from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
-import { cn } from "/Users/tino/GIT/intern-react-challenge/src/utils/cn.ts";
+import { cn } from "../../utils/cn.ts";
 
 export const TextRevealCard = ({
   text,

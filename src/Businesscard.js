@@ -3,7 +3,7 @@ import {
     CardContainer,
     CardBody,
     CardItem,
-} from "/Users/tino/GIT/intern-react-challenge/src/components/ui/3d-card.tsx";
+} from "./components/ui/3d-card.tsx";
 import "./Businesscard.css";
 
 const Businesscard = () => {

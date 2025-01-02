@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "/Users/tino/GIT/intern-react-challenge/src/utils/cn.ts";
+import { cn } from "../../utils/cn.ts";
 import React, {
   createContext,
   useState,

@@ -60,7 +60,7 @@ const Businesscard = () => {
                                     valentino.ivanovski@icloud.com
                                 </a>
                             </p>
-                            <p>From: Koper, Slovenia</p>
+                            <p>Studying in: Koper, Slovenia</p>
                         </div>
                         {isExpanded && (
                             <div className="button-container">

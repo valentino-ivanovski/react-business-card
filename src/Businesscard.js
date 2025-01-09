@@ -44,7 +44,7 @@ const Businesscard = () => {
                         </p>
                         <div className="skills">
                             <span>React</span>
-                            <span>Java</span>
+                            <span>JavaScript</span>
                             <span>SQL</span>
                             <span>Git</span>
                             <span>Node.js</span>

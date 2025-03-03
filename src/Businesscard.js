@@ -7,8 +7,7 @@ import {
 import "./Businesscard.css";
 
 const Businesscard = () => {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const [showWelcome, setShowWelcome] = useState(() => true); //it wouldnt work without the function when i would start the app
+    const [showWelcome, setShowWelcome] = useState(true);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -17,14 +16,6 @@ const Businesscard = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    const handleClick = () => {
-        setIsExpanded(!isExpanded);
-    };
-
-    const stopExpand = (e) => {
-        e.stopPropagation();
-    };
-
     if (showWelcome) {
         return <h1 className="welcome-text">Welcome!</h1>;
     }
@@ -32,10 +23,7 @@ const Businesscard = () => {
     return (
         <CardContainer>
             <CardBody>
-                <CardItem
-                    className={`card-item ${isExpanded ? "expanded" : ""}`}
-                    onClick={handleClick}
-                >
+                <CardItem className="card-item">
                     <div id="content">
                         <img src="pfp.jpg" alt="profile-pic" />
                         <h1 className="name">Valentino Ivanovski</h1>
@@ -51,31 +39,28 @@ const Businesscard = () => {
                             <span>Express.js</span>
                         </div>
                         <div className="contact">
-                            <p>Phone: (+386) 69 646 407</p>
                             <p>
                                 <a
                                     href="mailto:valentino.ivanovski@icloud.com"
-                                    onClick={stopExpand}
-                                >
+                                    >
                                     valentino.ivanovski@icloud.com
                                 </a>
                             </p>
+                            <p>Phone: (+386) 69 646 407</p>
                             <p>Studying in: Koper, Slovenia</p>
                         </div>
-                        {isExpanded && (
-                            <div className="button-container">
-                                <a
-                                    href="https://github.com/valentino-ivanovski"
-                                    onClick={stopExpand}
-                                    target="_blank"
-                                    rel="noreferrer noopener"
-                                >
-                                    <button>
-                                        <b>GitHub</b>
-                                    </button>
-                                </a>
-                            </div>
-                        )}
+                    </div>
+                    {/* Always show the GitHub button */}
+                    <div className="button-container">
+                        <a
+                            href="https://github.com/valentino-ivanovski"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            <button>
+                                <b>GitHub</b>
+                            </button>
+                        </a>
                     </div>
                 </CardItem>
             </CardBody>
